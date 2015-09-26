@@ -1,3 +1,4 @@
+-- 1. Nesil Çekirdek
 -- #== DEMO PROGRAM ==#
 --Sunucu Bağlantısı için Gerekli Ayarları Yapıyoruz 60s zaman aşımı
 server = net.createServer(net.TCP, 60) 

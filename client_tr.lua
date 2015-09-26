@@ -1,3 +1,4 @@
+-- 1. Nesil Çekirdek
 -- #== DEMO PROGRAM ==#
 --Sunucuya Bağlantı Kuruyoruz
 client = net.createConnection(net.TCP, 0)
