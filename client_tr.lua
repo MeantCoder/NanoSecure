@@ -1,9 +1,9 @@
 -- 1. Nesil Çekirdek
 -- #== DEMO PROGRAM ==#
---Sunucuya Bağlantı Kuruyoruz
+-- Sunucuya Bağlantı Kuruyoruz
 client = net.createConnection(net.TCP, 0)
 
---Sunucudan Gelen Veri'leri Yazdırıyoruz
+-- Sunucudan Gelen Veri'leri Yazdırıyoruz
 	client:on("receive", function(client, data)
 			if data == "Merhaba Client" then
 				client:send("Doğrulama [OK]")
@@ -13,10 +13,10 @@ client = net.createConnection(net.TCP, 0)
 		end
 	)
 	
---Sunucuya Bağlantı Ayarlarını Yapıyoruz : PORT = [1905] , SERVER = [localhost]
+-- Sunucuya Bağlantı Ayarlarını Yapıyoruz : PORT = [1905] , SERVER = [localhost]
 client:connect(1905, "localhost")
 
---Sunucuya Merhaba Metni Yolluyoruz
+-- Sunucuya Merhaba Metni Yolluyoruz
 client:send("Merhaba Server")
 
---26.9.21015 NanoSoft 1. DEMO - B. Uğur Demirkan  => meantcoder@gmail.com
+-- 26.9.2015 NanoSoft 1. DEMO - B. Uğur Demirkan  => meantcoder@gmail.com
