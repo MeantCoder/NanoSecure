@@ -9,7 +9,7 @@ server = net.createServer(net.TCP, 60)
 			server:send("Merhaba Client")
 		elseif data == "Doğrulama [OK]" then
 			server:send("Server & Client Bağlantısı Aktif \r\n NanoSoft TCP Bilgi Merkezine Hoşgeldiniz")
-		elseif data == "close || quit || exit || çıkış" then
+		elseif data == "close" or "quit" or "exit" or "çıkış" then
 			server:send("Güle Güle, İyi Günler.")
 			client:close()
 		else
