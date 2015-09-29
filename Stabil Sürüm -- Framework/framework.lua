@@ -6,6 +6,7 @@ framework={}
     framework.version = "ALPHA 1"
     framework.compatible = "net.Server, LUA & NodeMCU Firmware Devices"
     framework.users = "For Developers"
+<<<<<<< HEAD
 
 -------------------------------------------------
 
@@ -16,6 +17,18 @@ int net.timeout = 0 -- Ýstemci Zaman Aþýmý
 int net.Port = 1905 -- Sunucu Portu
 var net.Server = "localhost" -- Sunucu Adresi
 var sensor_data = 0 -- Sensör Varsayýlan Deðer
+=======
+    
+-------------------------------------------------
+
+var server_name = server -- Sunucu DeÄŸiÅŸkeni
+var client_name = client -- Ä°stemci DeÄŸiÅŸkeni
+var net.type = net.TCP -- Ä°stemci BaÄŸlantÄ± Tipi
+int net.timeout = 0 -- Ä°stemci Zaman AÅŸÄ±mÄ±
+int net.Port = 1905 -- Sunucu Portu
+var net.Server = "localhost" -- Sunucu Adresi
+var sensor_data = 0 -- SensÃ¶r VarsayÄ±lan DeÄŸer
+>>>>>>> 85da132016d65bfcb51d1824aaf543279d9986be
 
 
 -- Client --
@@ -55,7 +68,14 @@ var io.trig = gpio.trig
 if ((net.Port > 28800) or (net.Port < 1))
     server_name.close
     client_name.close
+<<<<<<< HEAD
     print("Port 1'den küçük 28800 'den büyük olamaz!")
     print("\r\n Þuanki Port :: " + net.Port)
 
 -------------------------------------------------
+=======
+    print("Port 1'den kÃ¼Ã§Ã¼k 28800 'den bÃ¼yÃ¼k olamaz!")
+    print("\r\n Åžuanki Port :: " + net.Port)
+
+-------------------------------------------------
+>>>>>>> 85da132016d65bfcb51d1824aaf543279d9986be
